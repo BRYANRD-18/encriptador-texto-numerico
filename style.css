@@ -338,6 +338,10 @@
         border-radius: 16px;
     }
 
+    .footer{
+        margin-top: 40%;
+    }
+
 }
 
 /* Estilos para el botón de cambio de modo oscuro */
