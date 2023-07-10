@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="recursos/candado proteccion icono.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ff2308bd6c.js" crossorigin="anonymous"></script>
+    <title>Encriptador de texto-numerico</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="ruta/a/crypto-js.js"></script>
+</head>
+<body>
+
+
+    <!--
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Swal.fire({
+          title: '¡Bienvenido!',
+          text: 'Gracias por visitar nuestra página web.',
+          icon: 'success',
+          confirmButtonText: 'Aceptar'
+        });
+      });
+
+      
+    </script>
+    -->
+ <!--
+    <script>
+        
+document.addEventListener('DOMContentLoaded', function() {
+    const { value: accept } = await Swal.fire({
+    title: 'Terms and conditions',
+    input: 'checkbox',
+    inputValue: 1,
+    inputPlaceholder:
+      'I agree with the terms and conditions',
+    confirmButtonText:
+      'Continue <i class="fa fa-arrow-right"></i>',
+    inputValidator: (result) => {
+      return !result && 'You need to agree with T&C'
+    }
+  })
+  
+  if (accept) {
+    Swal.fire('You agreed with T&C :)')
+  }
+});
+
+
+    </script>
+-->
+<!--
+     <script>
+         Swal.fire({
+         title: 'How old are you?',
+         icon: 'question',
+         input: 'range',
+         inputLabel: 'Your age',
+         inputAttributes: {
+         min: 8,
+         max: 120,
+         step: 1
+       },
+     inputValue: 25
+  })
+     </script>
+-->
+     
+    <div class="contenedorTodo">
+        <div class="logoP">
+           <a href="index.html"><img src="recursos/Logo.png" alt=""></a> 
+        </div>
+
+        <button id="darkModeToggle" class="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button>
+          
+
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        </div>
+        <div class="terminos">
+            <p>Es recomendable solo textos en minusculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button class="btn-borrar" type="button" onclick="borrar()">Borrar</button>
+            <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+            <input type="button" class="btn-copiar" value="Copiar" onclick="copiar()">
+
+        </div> 
+    
+
+    <div class="encriptado">
+        <img src="recursos/Muñeco.png" alt="" id="muneco">
+        <div class="mensajeEncriptado" id="mensajeEncriptado">
+              <h2 id="tituloMensaje">Ningun mensaje encontrado</h2>
+              <p id="parrafo">Ingrese el texto que desea encriptar o desencriptar.
+            <br>Recuerda que puedes activar o desactivar el modo oscuro en la esquina inferior derecha.
+              </p>
+              <!--
+              <textarea name="mensaje" id="" cols="30" rows="10" class="mensaje"></textarea>
+              -->
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos para el pie de página */
+    .footer {
+      background-color: #0a3871;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .footer p {
+      margin: 0;
+      color: #fff;
+    }
+    
+    .footer .social-icons i {
+      width: 20px;
+      margin: 0 5px;
+      color: #fff;
+    }
+
+    .footer .social-icons i:hover{
+        color: #f3f5fc;
+        transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- El contenido de tu página web -->
+  
+  <footer class="footer">
+    <p>&copy; 2023</p>
+    <p>Bryan Alexander Lora Nova</p>
+    <p>Usuario: BRYANRD-18</p>
+    <p>Teléfono: +1 829-675-8892</p>
+    <div class="social-icons">
+      <a href="https://web.facebook.com/profile.php?id=100009479000970" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://github.com/BRYANRD-18" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/bryanlora18/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p>Este encriptador de texto fue creado por Bryan Alexander Lora Nova(YO) como proyecto del curso Alura Latam en el primer challenge de ONE(Oracle next education).</p>
+    <p>Proyecto terminado el 29 de mayo del 2023 con ciertas modificaciones posteriores.</p>
+    <p>Proyecto aun no disponible en alguno de mis repositorios de github.</p>
+  </footer>
+     
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>-->
+</body>
+<script src="interaccion.js"></script>
+</html>
