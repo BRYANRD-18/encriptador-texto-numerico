@@ -103,7 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="mensajeEncriptado" id="mensajeEncriptado">
               <h2 id="tituloMensaje">Ningun mensaje encontrado</h2>
               <p id="parrafo">Ingrese el texto que desea encriptar o desencriptar.
-            <br>Recuerda que puedes activar o desactivar el modo oscuro en la esquina inferior derecha.
               </p>
               <!--
               <textarea name="mensaje" id="" cols="30" rows="10" class="mensaje"></textarea>
@@ -114,7 +113,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <style>
     /* Estilos para el pie de página */
- 
+    .footer {
+      background-color: #0a3871;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .footer p {
+      margin: 0;
+      color: #fff;
+    }
+    
+    .footer .social-icons i {
+      width: 20px;
+      margin: 0 5px;
+      color: #fff;
+    }
+
+    .footer .social-icons i:hover{
+        color: #f3f5fc;
+        transform: scale(1.1);
+    }
   </style>
 </head>
 <body>

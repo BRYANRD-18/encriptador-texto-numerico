@@ -338,18 +338,6 @@
         border-radius: 16px;
     }
 
-    .encriptado .muneco img{
-        top: 4%;
-    }
-
-    .encriptado .mensajeEncriptado h2{
-        top: 4%;
-    }
-
-    .encriptado .mensajeEncriptado p{
-        top: 4%;
-    }
-
 }
 
 /* Estilos para el botón de cambio de modo oscuro */
@@ -439,24 +427,4 @@
   }
 
 
-  .footer {
-    background-color: #0a3871;
-    padding: 20px;
-    text-align: center;
-  }
   
-  .footer p {
-    margin: 0;
-    color: #fff;
-  }
-  
-  .footer .social-icons i {
-    width: 20px;
-    margin: 0 5px;
-    color: #fff;
-  }
-
-  .footer .social-icons i:hover{
-      color: #f3f5fc;
-      transform: scale(1.1);
-  }
