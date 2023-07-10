@@ -338,8 +338,16 @@
         border-radius: 16px;
     }
 
-    .footer{
-        margin-top: 40%;
+    .encriptado .muneco img{
+        top: 4%;
+    }
+
+    .encriptado .mensajeEncriptado h2{
+        top: 4%;
+    }
+
+    .encriptado .mensajeEncriptado p{
+        top: 4%;
     }
 
 }
